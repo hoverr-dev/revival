@@ -1,25 +1,47 @@
 <header class="header">
-  <div class="container">
+  <div class="header-container">
     <div class="header__wrapper">
       <nav class="menu" title="Главное меню">
-        <div class="menu__logo">Logo</div>
+        <div class="menu__logo">
+          <img class="menu__img" src="img/logo.svg" alt="Логотип: ЖК ВОЗРОЖДЕНИЕ">
+        </div>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#">
-              link 1
+            <a class="menu__link link" href="#">
+              О компании
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
-              link 2
+            <a class="menu__link link" href="#">
+              Новости
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
-              link 3
+            <a class="menu__link link" href="#">
+              Документы
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">
+              Контакты
             </a>
           </li>
         </ul>
+        <div class="menu-info">
+          <div class="menu-info__inner">
+            <span class="menu-info__tel">
+              +7 982 45-22-67
+            </span>
+            <span class="menu-info__time">
+              Пн-Пт. с 8:00 до 19:00
+            </span>
+          </div>
+          <a class="menu-info__circle" href="tel:7982452267">
+            <svg class="menu-info__phone">
+              <use xlink:href="img/svg/sprite.svg#phone-icon"></use>
+            </svg>
+          </a>
+        </div>
         <button class="burger"><span></span></button>
       </nav>
     </div>

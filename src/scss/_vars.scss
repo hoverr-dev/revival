@@ -1,6 +1,6 @@
 :root {
   //Основные настройки контейнера
-  --content-width: 1170px;
+  --content-width: 1280px;
   --content-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--content-offset) * 2));
 
@@ -9,6 +9,7 @@
 
   // white & gray
   --light-color: #fff;
+  --lightgrey-color: rgba(255, 255, 255, 0.5);
   --bleached-silk: #f2f2f2;
   --silver-color: #bfbfbf;
   --bauhaus-color: #404040;

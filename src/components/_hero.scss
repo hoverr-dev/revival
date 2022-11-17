@@ -1,3 +1,82 @@
 .hero {
-  padding-top: 80px;
+  min-height: 800px;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &-content {
+    position: relative;
+    display: flex;
+    &-left {
+      max-width: 720px;
+      margin-left: 8px;
+      padding-top: 309px;
+      &__title {
+        margin-bottom: 40px;
+      }
+      &__style {
+        position: relative;
+        font-weight: 700;
+        color: var(--azure-color);
+        &::before {
+          position: absolute;
+          content: "";
+          background-image: url(../img/line.svg);
+          background-repeat: no-repeat;
+          width: 123px;
+          height: 16px;
+          left: -7px;
+          bottom: -7px;
+        }
+      }
+      &__inner {
+        display: flex;
+        gap: 10px;
+      }
+      &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 326px;
+        min-height: 80px;
+        gap: 26px;
+      }
+      &__apart {
+        width: 19px;
+        height: 19px;
+        fill: var(--light-color);
+      }
+    }
+    &-right {
+      padding-top: 100px;
+      right: 0;
+      &__inner {
+        position: absolute;
+        &_first {
+          background-image: url(../img/hero-img-1.png);
+          background-repeat: no-repeat;
+          background-position: left;
+          width: 100%;
+          max-width: 641px;
+          min-height: 700px;
+          -webkit-clip-path: polygon(31.7% 0%, 76.7% 0%, 45.6% 100%, 0.7% 100%);
+          clip-path: polygon(31.3% 0%, 76.5% 0%, 45.3% 100%, 0% 100%);
+          right: -29px;
+          object-fit: cover;
+        }
+        &_second {
+          background-image: url(../img/hero-img-2.png);
+          background-repeat: no-repeat;
+          background-position: left;
+          width: 100%;
+          max-width: 622px;
+          min-height: 700px;
+          -webkit-clip-path: polygon(32.9% 0%, 100% 0%, 100% 100%, 1.6% 100%);
+          clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 0.1% 100%);
+          right: -320px;
+        }
+      }
+    }
+  }
 }

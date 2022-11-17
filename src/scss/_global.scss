@@ -23,6 +23,12 @@
   max-width: var(--container-width);
 }
 
+.header-container {
+  margin: 0 auto;
+  padding: 0 var(--content-offset);
+  max-width: 1326px;
+}
+
 .body {
   @include montserrat-400;
   &_hidden {
@@ -43,6 +49,13 @@
 
 // Общие стили
 
+.link {
+  transition: color 0.3s ease;
+  &:hover,
+  &:active {
+    color: var(--azure-color);
+  }
+}
 .link,
 .main-title,
 .secondary-button {
@@ -76,11 +89,19 @@
 .first-button {
   @include montserrat-700;
   color: var(--light-color);
-  background-color: var(--button-gradient-color);
+  background: var(--button-gradient-color);
   box-shadow: var(--button-box-shadow-color);
+  &:hover,
+  &:active {
+    background: var(--azure-color);
+  }
 }
 
 .secondary-button {
   border: 1px solid var(--rhapsody-color);
   background-color: transparent;
+  &:hover,
+  &:active {
+    border: 2px solid var(--rhapsody-color);
+  }
 }
