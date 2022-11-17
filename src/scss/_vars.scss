@@ -1,0 +1,27 @@
+:root {
+  //Основные настройки контейнера
+  --content-width: 1170px;
+  --content-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--content-offset) * 2));
+
+  // Добавление цвета
+  --green-color: #00bf5f;
+
+  // white & gray
+  --light-color: #fff;
+  --bleached-silk: #f2f2f2;
+  --silver-color: #bfbfbf;
+  --bauhaus-color: #404040;
+
+  // blue
+  --alice-blue-color: #f2f9ff;
+  --ice-color: #f9fcff;
+  --azure-color: #007fff;
+  --bracing-color: #003f80;
+  --rhapsody-color: #002040;
+
+  // gradient & shadow
+  --button-gradient-color: linear-gradient(180deg, #409fff 0%, #007fff 100%);
+  --button-box-shadow-color: 0px 10px 10px rgba(0, 32, 64, 0.1), inset 0px 2px 0px rgba(255, 255, 255, 0.25),
+    inset 0px -2px 0px rgba(0, 32, 64, 0.1);
+}

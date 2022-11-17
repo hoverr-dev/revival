@@ -1,0 +1,77 @@
+@mixin select {
+  .custom-select {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    &__box {
+      background-color: #2f3640;
+      color: #f5f6fa;
+      max-height: 0;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.4s;
+      border-radius: 0 0 8px 8px;
+      overflow: hidden;
+      order: 1;
+      &::-webkit-scrollbar {
+        width: 8px;
+        background-color: #0d141f;
+        border-radius: 0 0px 8px 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #525861;
+        border-radius: 0 0px 8px 0;
+      }
+      &.select-active {
+        max-height: 240px;
+        opacity: 1;
+        overflow-y: scroll;
+        border-top: 1px solid #0d141f;
+        & ~ .custom-select__search .custom-select__search-input {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+      &.select-active + .custom-select__selected::after {
+        transform: rotateX(180deg);
+        top: -6px;
+      }
+    }
+    &__selected {
+      position: relative;
+      background-color: #2f3640;
+      border-radius: 8px 8px 0 0;
+      color: #f5f6fa;
+      order: 0;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        right: 10px;
+        width: 32px;
+        height: 100%;
+        background: url("../select-arrow-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.4s;
+      }
+    }
+    &__option,
+    &__selected {
+      padding: 12px 24px;
+      cursor: pointer;
+    }
+    &__option {
+      &:hover {
+        background-color: #414b57;
+      }
+      .custom-select__input {
+        display: none;
+      }
+    }
+    &__label {
+      cursor: pointer;
+    }
+  }
+}
+@include select;

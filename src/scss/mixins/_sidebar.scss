@@ -1,0 +1,68 @@
+@mixin sidebar {
+  .custom-sidebar {
+    display: flex;
+    &__item {
+      position: relative;
+      width: 540px;
+      color: #918eab;
+      margin-bottom: 32px;
+    }
+    &__status {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0 4px 4px 0;
+      animation: extend 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+    @keyframes extend {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    &__percent {
+      animation: show 0.1s 1s forwards;
+      opacity: 0;
+    }
+    @keyframes show {
+      100% {
+        opacity: 1;
+      }
+    }
+    &__bar {
+      position: relative;
+      height: 8px;
+      border-radius: 0 4px 4px 0;
+      background-color: #f8f8fe;
+      overflow: hidden;
+      &_first {
+        .custom-sidebar__status {
+          background-color: #00c0ff;
+          width: 90%;
+        }
+      }
+      &_second {
+        .custom-sidebar__status {
+          background-color: red;
+          width: 85%;
+        }
+      }
+      &_thirth {
+        .custom-sidebar__status {
+          background-color: green;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+@include sidebar;
