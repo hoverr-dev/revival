@@ -9,7 +9,7 @@
     display: flex;
     &-left {
       max-width: 720px;
-      margin-left: 8px;
+      margin-left: 18px;
       padding-top: 309px;
       &__title {
         margin-bottom: 40px;
@@ -62,7 +62,7 @@
           min-height: 700px;
           -webkit-clip-path: polygon(31.7% 0%, 76.7% 0%, 45.6% 100%, 0.7% 100%);
           clip-path: polygon(31.3% 0%, 76.5% 0%, 45.3% 100%, 0% 100%);
-          right: -29px;
+          right: -19px;
           object-fit: cover;
         }
         &_second {
@@ -74,7 +74,7 @@
           min-height: 700px;
           -webkit-clip-path: polygon(32.9% 0%, 100% 0%, 100% 100%, 1.6% 100%);
           clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 0.1% 100%);
-          right: -311px;
+          right: -301px;
         }
       }
     }

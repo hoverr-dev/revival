@@ -5,6 +5,9 @@
   height: 100px;
   z-index: 55;
   background-color: var(--lightgrey-color);
+  &_scroll {
+    background-color: var(--light-color);
+  }
   &__wrapper {
     height: 100px;
     display: flex;

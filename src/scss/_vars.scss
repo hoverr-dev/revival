@@ -1,6 +1,6 @@
 :root {
   //Основные настройки контейнера
-  --content-width: 1280px;
+  --content-width: 1300px;
   --content-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--content-offset) * 2));
 
@@ -25,4 +25,5 @@
   --button-gradient-color: linear-gradient(180deg, #409fff 0%, #007fff 100%);
   --button-box-shadow-color: 0px 10px 10px rgba(0, 32, 64, 0.1), inset 0px 2px 0px rgba(255, 255, 255, 0.25),
     inset 0px -2px 0px rgba(0, 32, 64, 0.1);
+  --bg-card-color: linear-gradient(0deg, rgba(0, 32, 64, 0.5), rgba(0, 32, 64, 0.5));
 }
